@@ -120,7 +120,7 @@
     <!-- Main content -->
     <div class="main-content">
         <!-- Header Image -->
-        <img src="path/to/your-image.jpg" alt="Your Academic Profile" class="header-image">
+        <img src="Yair_Lakretz.jpg" alt="Your Academic Profile" class="header-image">
         
         <h1>Your Academic Profile</h1>
 
