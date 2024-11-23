@@ -18,6 +18,7 @@
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
             display: flex;
+            flex-direction: column;
         }
 
         /* Sidebar style */
@@ -61,6 +62,14 @@
             margin-left: 260px;
             padding: 30px;
             width: 100%;
+        }
+
+        /* Image at the top */
+        .header-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            margin-bottom: 20px;
         }
 
         .main-content h1 {
@@ -110,6 +119,9 @@
 
     <!-- Main content -->
     <div class="main-content">
+        <!-- Header Image -->
+        <img src="path/to/your-image.jpg" alt="Your Academic Profile" class="header-image">
+        
         <h1>Your Academic Profile</h1>
 
         <!-- Research Section -->
