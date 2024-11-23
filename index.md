@@ -1,49 +1,152 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Academic Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-# My Academic Website
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+        }
 
-Hello! I’m **[Yair Lakretz]**, I'm a Cognitive Neuroscienist and AI researcher at ["ENS Paris"]. My research focuses on [Brief Description of Research Focus, e.g., "language processing, neural networks, and human error analysis."]
+        /* Sidebar style */
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+        }
 
-This website showcases my research projects, publications, and academic interests. Feel free to browse around and reach out if you’re interested in collaboration!
+        .sidebar h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
 
-## About Me
+        .sidebar ul {
+            list-style-type: none;
+        }
 
-I am passionate about [ ."] My work combines experimental psychology with computational modeling to investigate how neural networks and humans handle language tasks.
+        .sidebar ul li {
+            margin: 15px 0;
+        }
 
-## Research Interests
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+        }
 
-- **Language Processing**
-- **Neural Networks & AI**
-- **Error Analysis in Human and Machine Learning**
-- **Cognitive Science**
+        .sidebar ul li a:hover {
+            background-color: #34495e;
+            padding-left: 10px;
+        }
 
-## Publications
+        /* Main content style */
+        .main-content {
+            margin-left: 260px;
+            padding: 30px;
+            width: 100%;
+        }
 
-- **[Title of Paper 1](link-to-publication)**  
-  Authors: Your Name, Co-author(s)  
-  *Journal/Conference Name, Year*  
-  Brief description of the research or findings.
+        .main-content h1 {
+            color: #2c3e50;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
 
-- **[Title of Paper 2](link-to-publication)**  
-  Authors: Your Name, Co-author(s)  
-  *Journal/Conference Name, Year*  
-  Brief description of the research or findings.
+        .section {
+            margin-bottom: 40px;
+        }
 
-## Current Projects
+        .section h2 {
+            color: #2980b9;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
 
-### Project 1: Non-Word Repetition in Neural Networks
-A brief description of this project, its goals, and its current status.
+        .section p {
+            font-size: 18px;
+            color: #555;
+        }
 
-### Project 2: [Another Project Title]
-A short description of another project you are working on.
+        /* Footer style */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
 
-## Contact
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Your Name</h2>
+        <ul>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#cv">Curriculum Vitae</a></li>
+        </ul>
+    </div>
 
-You can reach me at **[your.email@example.com]** or connect with me on [LinkedIn](https://linkedin.com/in/yourprofile) and [GitHub](https://github.com/yourusername).
+    <!-- Main content -->
+    <div class="main-content">
+        <h1>Your Academic Profile</h1>
 
----
+        <!-- Research Section -->
+        <div id="research" class="section">
+            <h2>Research</h2>
+            <p>Here you can describe your research interests, ongoing projects, and publications related to your academic work.</p>
+        </div>
 
-*This website is built using [GitHub Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).*
+        <!-- Teaching Section -->
+        <div id="teaching" class="section">
+            <h2>Teaching</h2>
+            <p>Include information about the courses you teach, teaching philosophy, and any relevant teaching materials or resources.</p>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Provide ways for visitors to contact you, such as email, office location, or links to social media or professional networks (e.g., LinkedIn, ResearchGate).</p>
+        </div>
+
+        <!-- Publications Section -->
+        <div id="publications" class="section">
+            <h2>Publications</h2>
+            <p>List your published works, including books, articles, conference papers, or other scholarly works with links if available.</p>
+        </div>
+
+        <!-- CV Section -->
+        <div id="cv" class="section">
+            <h2>Curriculum Vitae</h2>
+            <p>Include a link to your full CV in PDF or HTML format or provide a summary of your academic career.</p>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Your Name | Academic Profile</p>
+        </footer>
+    </div>
+
+</body>
+</html>
