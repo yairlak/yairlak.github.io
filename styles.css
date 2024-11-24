@@ -53,7 +53,7 @@ body {
     margin-left: 260px; /* account for sidebar width */
     padding: 30px;
     width: calc(100% - 260px); /* adjust for sidebar width */
-    max-width: 1200px; /* limit the width of the content */
+    max-width: 600px; /* limit the width of the content */
     margin-right: auto;
 }
 
