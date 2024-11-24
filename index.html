@@ -3,39 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Academic Profile</title>
+    <title>Yair Lakretz</title>
     <link rel="stylesheet" href="styles.css">  <!-- Ensure this path is correct -->
 </head>
 <body>
 
     <!-- Sidebar -->
     <div class="sidebar">
-        <h2>Your Name</h2>
+    <img src="images/Yair_Lakretz.jpg" alt="Your Academic Profile" class="header-image" style="width: 5cm; height: 7cm;">
+        <h2>Yair Lakretz</h2>
         <ul>
-            <li><a href="sections/research.html">Research</a></li>
+            <li><a href="https://scholar.google.co.il/citations?user=cNnJ5YUAAAAJ&hl=fr">Publications</a></li>
             <li><a href="sections/teaching.html">Teaching</a></li>
             <li><a href="sections/contact.html">Contact</a></li>
-            <li><a href="sections/publications.html">Publications</a></li>
-            <li><a href="sections/cv.html">Curriculum Vitae</a></li>
         </ul>
     </div>
 
     <!-- Main content -->
     <div class="main-content">
         <!-- Header Image -->
-        <img src="images/Yair_Lakretz.jpg" alt="Your Academic Profile" class="header-image" style="width: 5cm; height: 7cm;">
-
-        <h1>Your Academic Profile</h1>
+        <h1>Linking Linguistic Theory and Brain Dynamics with Deep Neural Models</h1>
 
         <!-- Default Content Section -->
         <div class="section">
-            <h2>Welcome!</h2>
-            <p>This is your academic profile. Use the menu on the left to explore different sections.</p>
+        <br>
+        <p>I am a cognitive neuroscientist and AI researcher working at the <a href="https://lscp.dec.ens.fr/en">Cognitive Sciences and Psycholinguistics Lab (LSCP)</a> in the Department of Cognitive Sciences at the <a href="https://www.ens.psl.eu/">École Normale Supérieure (ENS), Paris</a>. I'm also a fellow of the Paris Artificial Intelligence Research Institute: <a href="https://prairie-institute.fr/chairs/lakretz-yair/">My PR[AI]RIE Profile</a>.</p></p>
+        
+        <p>My research focuses on the neural mechanisms underlying language processing in the human brain, as well as neural AI models.</p>
+        
+        
+
+        
+        
+        <p> We study how various aspects of language - phonology, orthography, syntax and semantics - are neurally encoded in the human brain. 
+        </p>
+        <h2>Click on the different parts of the image below to navigate:</h2>
+
+	    <!-- Define the image map -->
+	    <div class="center-image">
+	    <img src="images/research.png" usemap="#image-map" alt="Interactive Image">
+	    </div>
+
+	    <!-- Create the map with different clickable areas -->
+	    <map name="image-map">
+		<!-- Define clickable areas with coordinates -->
+		<area shape="rect" coords="34,44,270,350" alt="Project 1" href="project1.html" />
+		<area shape="circle" coords="400,150,60" alt="Project 2" href="project2.html" />
+		<area shape="poly" coords="500,200,550,250,600,250,650,200" alt="Project 3" href="project3.html" />
+	    </map>
+            
+        
+
+
         </div>
 
         <!-- Footer -->
         <footer>
-            <p>&copy; 2024 Yair Lakretz | LSCP, Ecole Normale Supérieure, Paris</p>
+            <p>&copy; 2024 Yair Lakretz | LSCP, Ecole Normale Supérieure, PSL, Paris</p>
         </footer>
     </div>
 
