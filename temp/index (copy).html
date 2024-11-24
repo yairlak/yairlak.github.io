@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Academic Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Sidebar style */
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #34495e;
+            padding-left: 10px;
+        }
+
+        /* Main content style */
+        .main-content {
+            margin-left: 260px;
+            padding: 30px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* Image at the top */
+        .header-image {
+            width: 3cm;
+            height: 4cm;
+            margin-bottom: 20px;
+        }
+
+        .main-content h1 {
+            color: #2c3e50;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #2980b9;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Footer style */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Your Name</h2>
+        <ul>
+            <li><a href="#" onclick="changeContent('research')">Research</a></li>
+            <li><a href="#" onclick="changeContent('teaching')">Teaching</a></li>
+            <li><a href="#" onclick="changeContent('contact')">Contact</a></li>
+            <li><a href="#" onclick="changeContent('publications')">Publications</a></li>
+            <li><a href="#" onclick="changeContent('cv')">Curriculum Vitae</a></li>
+        </ul>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Header Image -->
+        <img src="Yair_Lakretz.jpg" alt="Your Academic Profile" class="header-image" style="width: 5cm; height: 7cm;">
+
+        <h1>Your Academic Profile</h1>
+
+        <!-- Dynamic Content Section -->
+        <div id="dynamic-content" class="section">
+            <!-- Default content here -->
+            <h2>Welcome!</h2>
+            <p>This is your academic profile. Use the menu on the left to explore different sections.</p>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Your Name | Academic Profile</p>
+        </footer>
+    </div>
+
+    <script>
+        // JavaScript to change content dynamically
+        function changeContent(section) {
+            let content = '';
+            switch(section) {
+                case 'research':
+                    content = `
+                        <h2>Research</h2>
+                        <p>I'm a cognitive neuroscienists and AI researcher at the Ecole Normale Supérieure (ENS) in Paris. My research aims to identify the neural mechanisms underlying language processing in humans and neural models.</p>
+                        
+                        
+                        <h2>Lab</h2>
+                        <p>I work at the Congitive Sciecnes and Psycholinguistics Lab (LSCP) in the Cognitive-Sciences Department, at the Ecole Normale Supérieure (ENS) in Paris. </p>
+                    `;
+                    break;
+                case 'teaching':
+                    content = `
+                        <h2>Teaching</h2>
+                        <p>Include information about the courses you teach, teaching philosophy, and any relevant teaching materials or resources.</p>
+                    `;
+                    break;
+                case 'contact':
+                    content = `
+                        <h2>Contact</h2>
+                        <p>Provide ways for visitors to contact you, such as email, office location, or links to social media or professional networks (e.g., LinkedIn, ResearchGate).</p>
+                    `;
+                    break;
+                case 'publications':
+                    content = `
+                        <h2>Publications</h2>
+                        <p>List your published works, including books, articles, conference papers, or other scholarly works with links if available.</p>
+                    `;
+                    break;
+                case 'cv':
+                    content = `
+                        <h2>Curriculum Vitae</h2>
+                        <p>Include a link to your full CV in PDF or HTML format or provide a summary of your academic career.</p>
+                    `;
+                    break;
+                default:
+                    content = `
+                        <h2>Welcome!</h2>
+                        <p>This is your academic profile. Use the menu on the left to explore different sections.</p>
+                    `;
+                    break;
+            }
+
+            // Update the content of the "dynamic-content" div
+            document.getElementById('dynamic-content').innerHTML = content;
+        }
+    </script>
+
+</body>
+</html>
