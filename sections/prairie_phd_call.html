@@ -3,109 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhD Research Proposal: Emulating Human Thought in AI</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        h1, h2 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 24px;
-        }
-        h2 {
-            font-size: 20px;
-        }
-        p {
-            margin-bottom: 16px;
-        }
-        ul {
-            margin-bottom: 16px;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        strong {
-            color: #222;
-        }
-        hr {
-            margin: 40px 0;
-            border: 1px solid #ddd;
-        }
-        #application-details {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        #application-details h2 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        #application-details ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        #application-details li {
-            margin-bottom: 5px;
-        }
-    </style>
+    <title>Emulating Human Thought: Dual-Route Processing in AI</title>
 </head>
 <body>
     <h1>Emulating Human Thought: Dual-Route Processing in AI</h1>
     <p><strong>Advisors:</strong> Yair LAKRETZ, Salvador MASCARENHAS</p>
     <p><strong>Framework:</strong> This PhD thesis will be conducted within the PR[AI]RIE-PSAI research program.</p>
-
-    <div id="application-details">
-        <h2>Application Details</h2>
-        <ul>
-            <li><strong>Deadline for Applications:</strong> 15/05/2025</li>
-            <li><strong>Required Documents:</strong>
-                <ol>
-                    <li>CV of the candidate.</li>
-                    <li>A one-page cover letter describing the ambitions for the described subject and the relevance of the application in relation to the subject description.</li>
-                    <li>Copy of the latest diplomas.</li>
-                </ol>
-            </li>
-            <li><strong>Results:</strong> Will be communicated in two phases between May 30th and mid-June at the latest.</li>
-        </ul>
-    </div>
+    <p><strong>Deadline for Applications:</strong> 15/05/2025</p>
+    <p><strong>Required Documents:</strong></p>
+    <ol>
+        <li>CV of the candidate.</li>
+        <li>A one-page cover letter describing the ambitions for the described subject and the relevance of the application in relation to the subject description.</li>
+        <li>Copy of the latest diplomas.</li>
+    </ol>
+    <p>Results will be communicated in two phases between May 30th and mid-June at the latest.</p>
 
     <h2>Context and Motivation for the Project</h2>
-    <p>Humans possess a unique capacity for language, a faculty argued by linguists to stem from the brain's recursive generation of hierarchical structures (Hauser, Chomsky & Fitch, 2002). This unique ability has not only given rise to spoken and written languages but also to the sophisticated symbolic systems underpinning science, music, mathematics, and visual patterns. While various hypotheses have been proposed to explain this human singularity, including advanced abilities in analogy, theory of mind, teaching, cultural memory, and interindividual communication [REFS], the fundamental computational ability and its underlying neural mechanisms remain unknown.</p>
+    <p>Humans possess a unique capacity for language, a faculty argued by linguists to stem from the brain's recursive generation of hierarchical structures (Hauser, Chomsky & Fitch, 2002). This unique ability has not only given rise to spoken and written languages but also to the sophisticated symbolic systems underpinning science, music, mathematics, and visual patterns. While various hypotheses have been proposed to explain this human singularity, including advanced abilities in analogy, theory of mind, teaching, cultural memory, and interindividual communication (Jerry Fodor, 1975; Gary F Marcus., 2019), the fundamental computational ability and its underlying neural mechanisms remain unknown.</p>
 
     <p>Recent advancements in Artificial Intelligence (AI) offer novel avenues for investigating this question. Large neural models, trained on massive datasets, exhibit near-human performance across a variety of tasks, spanning language, vision, and reasoning. Similar to the human brain, these models rely on vectorial representations, providing unprecedented opportunities to study the neural and computational processes underlying complex cognitive functions such as natural language processing and arithmetic and geometry problem-solving.</p>
-
-    <p>However, a critical examination reveals that current AI still falls short of human-level intelligence. Large Language Models (LLMs) encounter difficulties with nested sentence structures [3], commit logical errors on tasks easily mastered by humans [4], and even when producing correct outputs, often appear to do so for superficial reasons [5]. Furthermore, Vision Language Models (VLMs) [6, 7], which typically approach visual reasoning through linguistic descriptions, demonstrate a lack of common sense [8] and intuitive physics understanding [9]. What are the missing components in AI models that are needed to bridge this gap between state-of-the-art AI models and humans?</p>
-
+    <p>However, a critical examination reveals that current AI still falls short of human-level intelligence. Large Language Models (LLMs) encounter difficulties with nested sentence structures (Yair Lakretz et al., 2022), commit logical errors on tasks easily mastered by humans (Sean Williams and James Huckle, 2024), and even when producing correct outputs, often appear to do so for superficial reasons (Tom McCoy, Ellie Pavlick, and Tal Linzen, 2019). Furthermore, Vision Language Models (VLMs) (Pravesh Agrawal et al., 2024; Chengyue Wu et al., 2024), which typically approach visual reasoning through linguistic descriptions, demonstrate a lack of common sense (Declan Iain Campbell et al., 2024) and intuitive physics understanding (Quentin Garrido et al., 2025). What are the missing components in AI models that are needed to bridge this gap between state-of-the-art AI models and humans?</p>
     <p>This project aims to empirically test several hypotheses about such missing components needed to bring AI closer to human unique ability. Specifically, this project will test the hypothesis that the capacity to manipulate discrete symbols and their composition within a recursive language allows humans to construct arbitrarily complex mental structures from a limited set of fundamental primitives, and that this capacity underlies humans’ unique capacity underpinning natural language, math, and music.</p>
-
     <p>In the past few years, our respective teams have demonstrated that via carefully designed evaluation tests and neural studies, deep language models can be tracked, dissected, and directly compared vis-a-vis humans. This project will extend this work to explore the core computational properties of human cognitive singularity.</p>
 
     <h2>Scientific Objectives, Methodology and Expected Results</h2>
+    <p><strong>Objective 1 - Develop Human-Like AI models with dual-route processing.</strong></p>
+    <p>Our central hypothesis is that current success of AI models stems from a collection of inductive biases (priors, such as architectural constraints and regularization methods), yet further inductive biases are necessary to advance from effective in-distribution generalization to robust out-of-distribution (OOD) generalization similar to that of humans. Cognitive science describes dual-route processing with habitual (System 1) and controlled (System 2) thinking, characterized by fast, parallel, unconscious operations versus slow, sequential, conscious effort (Jonathan St. B. T. Evans, 2008). System 2 enables complex tasks like reasoning, solving math problems or creating music by integrating various knowledge sources, often building upon System 1's implicit knowledge. We will test the hypothesis that dual-route processing, akin to that described in humans, is required to achieve robust OOD generalization in AI models. We will test several approaches to endow models with dual-route processing, such as combining Contextual Positional Encoding (CoPE) (Olga Golovneva et al., 2024) together with recurrent layers (Nikunj Saunshi et al., 2025), and introducing working-memory dynamics into neural models.</p>
 
-    <h3>Objective 1 - Develop Human-Like AI models with dual-route processing.</h3>
-    <p>Our central hypothesis is that current success of AI models stems from a collection of inductive biases (priors, such as architectural constraints and regularization methods), yet further inductive biases are necessary to advance from effective in-distribution generalization to robust out-of-distribution (OOD) generalization similar to that of humans. Cognitive science describes dual-route processing with habitual (System 1) and controlled (System 2) thinking, characterized by fast, parallel, unconscious operations versus slow, sequential, conscious effort [REFS]. System 2 enables complex tasks like reasoning, solving math problems or creating music by integrating various knowledge sources, often building upon System 1's implicit knowledge. We will test the hypothesis that dual-route processing, akin to that described in humans, is required to achieve robust OOD generalization in AI models. We will test several approaches to endow models with dual-route processing, such as combining contextual positional encoding (CoPE) together with recurrent layers [REFS], and introducing working-memory dynamics into neural models.</p>
+    <p><strong>Objective 2 - Identify the Neural Mechanisms underlying rule-based processing</strong></p>
+    <p>This part of the project specifically targets the rule-based route (System 2) introduced in Objective 1, which is characterized by slow, sequential, and controlled processing associated with rule-based reasoning and explicit knowledge manipulation. Specifically, we will study how primitives and rules of a Language of Thought are neurally implemented. This objective focuses on dissecting the neural models designed to exhibit dual-route processing, with the aim of pinpointing the specific neural mechanisms responsible for implementing and applying these rules within the System 2 pathway. We will employ interpretability techniques, drawing from our prior work (Linnea Evanson, Yair Lakretz, and Jean Rémi King, 2023; Michael Goodale, Salvador Mascarenhas, and Yair Lakretz. 2025), to analyze the learned representations and activation patterns within the neural networks.</p>
 
-    <h3>Objective 2 - Identify the Neural Mechanisms underlying rule-based processing</h3>
-    <p>This part of the project specifically targets the rule-based route (System 2) introduced in Objective 1, which is characterized by slow, sequential, and controlled processing associated with rule-based reasoning and explicit knowledge manipulation. Specifically, we will study how primitives and rules of a Language of Thought are neurally implemented. This objective focuses on dissecting the neural models designed to exhibit dual-route processing, with the aim of pinpointing the specific neural mechanisms responsible for implementing and applying these rules within the System 2 pathway. We will employ interpretability techniques, drawing from our prior work [REFS], to analyze the learned representations and activation patterns within the neural networks.</p>
-
-    <h3>Objective 3 - Test predictions from Human-Like AI models against behavioral and neural data from humans.</h3>
-    <p>In the final phase, we will validate the neural mechanism predictions generated by our Human-Like AI models (from Objectives 1 and 2) by comparing them with high spatiotemporal resolution intracranial data obtained from human participants through collaborations with neurosurgical centers worldwide. This direct comparison will assess the extent to which the model's internal operations align with neural activity observed during relevant cognitive tasks in the human brain.</p>
+    <p><strong>Objective 3 - Test predictions from Human-Like AI models against behavioral and neural data from humans.</strong></p>
+    <p>In the final phase, we will validate the neural mechanism predictions generated by our Human-Like AI models (from Objectives 1 and 2) by comparing them with high spatiotemporal resolution intracranial data obtained from human participants through collaborations with neurosurgical centers worldwide, as in our previous work (Yair Lakretz et al., 2021; Yair Lakretz et al. 2024). This direct comparison will assess the extent to which the model's internal operations align with neural activity observed during relevant cognitive tasks in the human brain.</p>
 
     <h2>Summary</h2>
     <p>The proposed research program uniquely interfaces theory and methods from artificial Intelligence, linguistics, cognitive sciences and neuroscience to identify neural mechanisms of fundamental computations in the human mind. Theory from cognitive sciences and linguistics will guide the development of models and their evaluation. Neuroscientific analysis methods will be applied to both human and model neural data, recorded during task solving. Intracranial experiments will be conducted in collaborations with several neurosurgical centers around the world. By linking multiple domains and by developing a neural-mechanistic understanding of the computations underlying a cognitive ability unique to our species, the thesis is expected to have a high scientific impact and to appear in high-profile journals.</p>
 
     <h2>References</h2>
-    <p>[References]</p>
+    <ol>
+        <li>Hauser, M. D., Chomsky, N., and Fitch, W. T. (2002). The faculty of language: What is it, who has it, and how did it evolve? Science, 298(5598):1569–1579.</li>
+        <li>Jerry Fodor. The Language of Thought. Harvard University Press, 1975.</li>
+        <li>Gary F Marcus. The algebraic mind: Integrating connectionism and cognitive science. MIT press, 2019.</li>
+        <li>​​Yair Lakretz et al. “Can Transformers Process Recursive Nested Constructions,
+        Like Humans?” In: Proceedings of the 29th International Conference on Computational Linguistics. Ed. by Nicoletta Calzolari et al. Gyeongju, Republic of Korea:
+        International Committee on Computational Linguistics, Oct. 2022, pp. 3226–3232.</li>
+        <li>Sean Williams and James Huckle. Easy Problems That LLMs Get Wrong. 2024.
+        arXiv: 2405.19616 [cs.AI].</li>
+        <li>Tom McCoy, Ellie Pavlick, and Tal Linzen. “Right for the Wrong Reasons: Diagnos-
+        ing Syntactic Heuristics in Natural Language Inference”. In: Proceedings of the 57th
+        Annual Meeting of the Association for Computational Linguistics. Ed. by Anna
+        Korhonen, David Traum, and Lluís Màrquez. Florence, Italy: Association for Computational Linguistics, July 2019, pp. 3428–3448.</li>
+        <li>Pravesh Agrawal et al. Pixtral 12B. 2024. arXiv: 2410.07073 [cs.CV].</li>
+        <li>Chengyue Wu et al. Janus: Decoupling Visual Encoding for Unified Multimodal
+        Understanding and Generation. 2024. arXiv: 2410.13848 [cs.CV].</li>
+        <li>Declan Iain Campbell et al. “Understanding the Limits of Vision Language Models
+        Through the Lens of the Binding Problem”. In: The Thirty-eighth Annual Conference on Neural Information Processing Systems. 2024.</li>
+        <li>Quentin Garrido et al. Intuitive physics understanding emerges from self-supervised pretraining on natural videos. 2025. arXiv: 2502 . 11831 [cs.CV].</li>
+        <li>Jonathan St. B. T. Evans. Dual-processing accounts of reasoning, judgment, and social cognition. Annu Rev Psychol. 2008; 59:255–278.</li>
+        <li>Olga Golovneva et al. Contextual Position Encoding: Learning to Count What’s Important. 2024. arXiv: 2405.18719 [cs.CL].</li>
+        <li>Nikunj Saunshi et al. Reasoning with Latent Thoughts: On the Power of Looped Transformers. 2025. arXiv: 2502.17416 [cs.CL].</li>
+        <li>Linnea Evanson, Yair Lakretz, and Jean Rémi King. “Language acquisition: do
+        children and language models follow similar learning stages?” In: Findings of the
+        Association for Computational Linguistics: ACL 2023. Ed. by Anna Rogers, Jor-
+        dan Boyd-Graber, and Naoaki Okazaki. Toronto, Canada: Association for Computa-
+        tional Linguistics, July 2023, pp. 12205–12218.</li>
+        <li>Michael Goodale, Salvador Mascarenhas, and Yair Lakretz. Meta-Learning Neural
+        Mechanisms rather than Bayesian Priors. 2025. arXiv: 2503.16048 [cs.CL].</li>
+        <li>Yair Lakretz et al. “Single-cell activity in human STG during perception of phonemes
+        is organized according to manner of articulation”. In: NeuroImage 226 (2021),
+        p. 117499. issn: 1053-8119.</li>
+        <li>Yair Lakretz et al. “Modality-Specific and Amodal Language Processing by Single
+        Neurons”. In: bioRxiv (2024).</li>
+    </ol>
 
     <h2>Statement</h2>
-    <p><strong>Non-discrimination, openness and transparency.</strong> All PR[AI]RIE-PSAI partners are committed to supporting and promoting equality, diversity, and inclusion within their communities. We encourage applications from diverse backgrounds, which we will ensure to select through an open and transparent recruitment process.</p>
+    <p>Non-discrimination, openness and transparency. All PR[AI]RIE-PSAI partners are committed to supporting and promoting equality, diversity, and inclusion within their communities. We encourage applications from diverse backgrounds, which we will ensure to select through an open and transparent recruitment process.</p>
 </body>
 </html>
