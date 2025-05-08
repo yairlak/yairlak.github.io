@@ -3,152 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae | Your Academic Profile</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>CV - Yair LAKRETZ</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; line-height: 1.6; }
+        header, section { margin-bottom: 30px; }
+        h1, h2, h3 { color: #333; }
+        h1 { text-align: center; }
+        .links { text-align: center; margin-bottom: 20px; }
+        .links a { margin: 0 10px; text-decoration: none; color: #007bff; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        li { margin-bottom: 10px; }
+        .publication-meta { font-size: 0.9em; color: #555; }
+        .sub-section h3 { margin-top: 20px; }
+        .entry { margin-bottom: 15px; }
+        .entry .date { font-weight: bold; display: block; margin-bottom: 5px;}
+        .entry .description { margin-left: 0; }
+    </style>
 </head>
 <body>
-    <div class="sidebar">
-        <h2>Your Name</h2>
+
+    <header>
+        <h1>Yair LAKRETZ</h1>
+        <div class="links">
+            <a href="[PersonalWebsite_URL_here]">Personal Website</a> |
+            <a href="[GoogleScholarProfile_URL_here]">Google Scholar Profile</a>
+        </div>
+    </header>
+
+    <section id="academic-positions">
+        <h2>Academic Positions</h2>
+        <div class="entry">
+            <span class="date">Starting Autumn 2025</span>
+            <div class="description">CNRS Researcher, Cognitive Sciences and Psycholinguistics Lab (LSCP) - Ecole Normale Supérieure, Paris, France. [cite: 2]</div>
+        </div>
+        <div class="entry">
+            <span class="date">2023-present</span>
+            <div class="description">AI Researcher (DATA program, PSL), Cognitive Sciences and Psycholinguistics Lab (LSCP) - Ecole Normale Supérieure, Paris, France; Pr[AI]rie AI Fellow. [cite: 2]</div>
+        </div>
+        <div class="entry">
+            <span class="date">2022</span>
+            <div class="description">Post-doctoral researcher, Cognitive Neuroimaging Unit - ICM Institute for Brain and Spinal Cord, Paris, France. Research projects on neural representations of cued speech in the human brain, Prof. Laurent Cohen's lab. [cite: 2]</div>
+        </div>
+        <div class="entry">
+            <span class="date">2018-2022</span>
+            <div class="description">Post-doctoral researcher, Cognitive Neuroimaging Unit - NeuroSpin, France. Research projects on syntactic processing in the brain, Prof. Stanislas Dehaene's lab. [cite: 2]</div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="entry">
+            <span class="date">2012-2017</span>
+            <div class="description">Ph.D. Student, Interdisciplinary Doctoral Program (5-years direct PhD) in Neuroscience for Outstanding Students (IDPN TAU). Sagol School of Neuroscience - Tel-Aviv University, Israel. Title: "A computational study of phoneme representations and errors in reading". Under the supervision of Prof. N. Friedmann (TAU) and Prof. G. Chechik (BIU). [cite: 2]</div>
+        </div>
+        <div class="entry">
+            <span class="date">2008-2010</span>
+            <div class="description">Master of Philosophy, Hebrew University, Israel. Title: "Space-State Semantics". Supervised by Prof. O. Shagrir. Best Thesis Award. [cite: 2]</div>
+        </div>
+        <div class="entry">
+            <span class="date">2002-2004</span>
+            <div class="description">B.Sc. in Mathematics, University of Haifa, Israel. [cite: 2]</div>
+        </div>
+        <div class="entry">
+            <span class="date">1997-2000</span>
+            <div class="description">B.Sc. in Physics, Technion - Israel Institute of Technology. [cite: 2]</div>
+        </div>
+    </section>
+
+    <section id="teaching">
+        <h2>Teaching</h2>
+        <div class="sub-section">
+            <h3>Lecturer</h3>
+            <ul>
+                <li>2023-2025: Ecole Normale Supérieure, Paris, Lecturer; Advanced Data Analysis with Deep Neural Models (Graduate course; M2) [cite: 3]</li>
+                <li>2023-2025: Dauphine University, Paris, Lecturer; Natural Language Processing and Artificial Intelligence (Graduate course; M2) [cite: 3, 4]</li>
+                <li>2014-2017: Tel-Aviv University, The Sagol school of Neuroscience, Lecturer; Introduction to Computational Neuroscience (Undergraduate Course). [cite: 5]</li>
+                <li>2016: Bar-Ilan University, The Gonda Multidisciplinary Brain Research Center, Lecturer; Computational approaches for understanding the brain (3rd year mandatory undergraduate course). [cite: 6]</li>
+                <li>2013-2014: Tel-Aviv University, The Sagol school of Neuroscience, Lecturer (together with Prof. Ben-Jacob E.); Network Theory and its Applications to Neuroscience (Undergraduate course). [cite: 7, 8]</li>
+            </ul>
+        </div>
+        <div class="sub-section">
+            <h3>Massive Open Online Course (MOOC)</h3>
+            <ul>
+                <li>2024-2025: Similarities and Differences in Natural Language Processing between Humans and Neural Models; Creation of an online advanced course for graduate students at Paris Sciences & Lettres (PSL University). [cite: 9, 10]</li>
+            </ul>
+        </div>
+        <div class="sub-section">
+            <h3>Teaching Assistant</h3>
+            <ul>
+                <li>2013-2016: Bar-Ilan, The Gonda Multidisciplinary Brain Research Center, Teaching Assistant; Neural Networks (Graduate Course, with Prof. Gal Chechik). [cite: 11]</li>
+                <li>2016: Tel-Aviv University, The Sagol school of Neuroscience, Teaching Assistant; Computational Psychology (Undergraduate Course, with Prof. Shimon Edelman). [cite: 12]</li>
+                <li>2012-2014: Tel-Aviv University, The Sagol school of Neuroscience, Teaching Assistant; Neuroanatomy (Undergraduate Course, with Dr. Asaf Marom). [cite: 13]</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="supervision">
+        <h2>Supervision</h2>
         <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="cv.html">Curriculum Vitae</a></li>
+            <li>Robin Sobczyk (PhD, CDSN, 2024-2027). [cite: 14]</li>
+            <li>Louis Jalouzot (PhD, CDSN, 2024-2027, co-supervision with Christophe Pallier). [cite: 14]</li>
+            <li>Maxence Pajot (PhD, 2024-2027, co-supervision with Stanislas Dehaene). [cite: 15]</li>
+            <li>Pablo Diego (PhD, AI4TheSciences, 2023-2026, co-supervision with Jean-Rémi King). [cite: 15]</li>
+            <li>Michael Goodale (PhD, FIRE scholarship, 2023-2026, with Salvador Mascarenhas). [cite: 16]</li>
+            <li>Malo Renaudin (2025, M.A.) [cite: 17]</li>
+            <li>Daniel Dager (2024-2025, M.A.) [cite: 17]</li>
+            <li>Ali Al-Azem (2024-2025, M.A. Intership) [cite: 17]</li>
+            <li>Jeanne Salle (2023, M.A. Intership, with Emmanuel Chemla) [cite: 17]</li>
+            <li>Robin Sobczyk (2023, M.A. Intership, with Emmanuel Chemla) [cite: 17]</li>
+            <li>Bastien l'Hopitallier (2023, M.A Intership, with Emmanuel Chemla) [cite: 17]</li>
         </ul>
-    </div>
+    </section>
 
-    <div class="main-content">
-        
-        <header>
-            <h1>Curriculum Vitae</h1>
-        </header>
-
-        <section class="employment">
-            <h3>EMPLOYMENT</h3>
+    <section id="list-of-publications">
+        <h2>List of Publications</h2>
+        <div class="sub-section">
+            <h3>Proceedings in AI and Computational Cognitive Neuroscience</h3>
             <ul>
-                <li><strong>2023-present:</strong> Fellow AI researcher, Cognitive Science and Psycholinguistics Lab (LSCP) – Ecole Normale Supérieure, Paris, France; Pr[AI]rie Fellow.</li>
-                <li><strong>2022:</strong> Post-doctoral researcher, Cognitive Neuroimaging Unit – ICM Institute for Brain and Spinal Cord, Paris, France. Research projects on neural representations of cued speech in the human brain, Prof. Laurent Cohen’s lab.</li>
-                <li><strong>2018-2022:</strong> Post-doctoral researcher, Cognitive Neuroimaging Unit – NeuroSpin, France. Research projects on syntactic processing in the brain, Prof. Stanislas Dehaene’s lab.</li>
-                <li><strong>2012-2017:</strong> Ph.D. Student, Interdisciplinary Doctoral Program (5-years direct PhD) in Neuroscience for Outstanding Students (IDPN-TAU). Sagol School of Neuroscience - Tel-Aviv University, Israel. Title: “A computational study of phoneme representations and errors in reading”. Under the supervision of Prof. N. Friedmann (TAU) and Prof. G. Chechik (BIU).</li>
+                <li>P. Diego-Simón, S. D'Ascoli, E. Chemla, Y. Lakretz, and J.-R. King. "A Polar coordinate system represents syntax in large language models". In: Advances in Neural Information Processing Systems. Ed. by A. Globerson, L. Mackey, D. Belgrave, A. Fan, U. Paquet, J. Tomczak, and C. Zhang. Vol. 37. Oral presentation, Acceptance rate: 25.8%. Curran Associates, Inc., 2024, pp. 105375-105396. [cite: 18, 19, 20]</li>
+                <li>A. Sarré, H. Salpeter, D. Bechar, L. Cohen, and Y. Lakretz. "Automatic Recognition of Gesture Identity and Onset of Cued-Speech". In: ICASSP 2024-2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). Poster Presentation, Acceptance Rate: 45.0%. IEEE. 2024, pp. 10251-10255. [cite: 21, 22, 23]</li>
+                <li>L. Evanson, Y. Lakretz*, and J. R. King*. "Language acquisition: do children and language models follow similar learning stages?" In: Findings of the Association for Computational Linguistics: ACL 2023. Oral Presentation, Acceptance Rate: 18.4%. 2023, pp. 12205-12218. [cite: 24]</li>
+                <li>A. Pasquiou, Y. Lakretz, B. Thirion, and C. Pallier. "Probing brain context-sensitivity with masked-attention generation". In: CCN 2023-Conference on Cognitive Computational Neuroscience. Poster Presentation. 2023. [cite: 25, 26]</li>
+                <li>Y. Lakretz, T. Desbordes, D. Hupkes, and S. Dehaene. "Can transformers process recursive nested constructions, like humans?" In: Proceedings of the 29th International Conference on Computational Linguistics. Oral Presentation, Acceptance Rate: 33.4%. 2022, pp. 3226-3232. [cite: 27, 28]</li>
+                <li>A. Pasquiou*, Y. Lakretz*, J. T. Hale, B. Thirion, and C. Pallier. "Neural Language Models are not Born Equal to Fit Brain Data, but Training Helps". In: International Conference on Machine Learning. Oral Presentation, Acceptance Rate: 21.9%. PMLR. 2022, pp. 17499-17516. [cite: 30, 31]</li>
+                <li>S. Andreetta, Y. Lakretz, and A. Treves. "Meter as a mnemonic device". In: 41. Jahrestagung der Deutschen Gesellschaft für Sprachwissenschaft (2019). Poster Presentation. [cite: 32]</li>
+                <li>Y. Lakretz, G. Kruszewski, T. Desbordes, D. Hupkes, S. Dehaene, and M. Baroni. "The Emergence of Number and Syntax Units in LSTM Language Models". In: Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers). Oral presentation, Acceptance rate: 26.3%. 2019, pp. 11-20. [cite: 33, 34, 35, 36]</li>
+                <li>Y. Lakretz, N. Friedmann, and A. Treves. "A biologically-inspired model of visual word recognition". In: Belgrade BioInformatics Conference 2016. Poster presentation. 2016, p. 114. [cite: 37, 38]</li>
+                <li>Y. Lakretz, G. Chechik, N. Friedmann, and M. Rosen-Zvi. "Probabilistic Graphical Models of Dyslexia". In: Proceedings of the 21th ACM SIGKDD international conference on knowledge discovery and data mining. Oral presentation, Acceptance rate: 19.5%. 2015, pp. 1919-1928. [cite: 39, 40]</li>
+                <li>Y. Lakretz, K. Marjanovic, Y. Gu, and A. Treves. "Distinguishing between Different Syntactic Roles of Identical Words in Normal Reading: an ERP Study." In: EAPCogSci. Poster Presentation. 2015. [cite: 41, 42]</li>
             </ul>
-        </section>
-	
-	<br>
-        <section class="education">
-            <h3>EDUCATION</h3>
+        </div>
+        <div class="sub-section">
+            <h3>Journal Articles</h3>
             <ul>
-                <li><strong>2008-2010:</strong> Master of Philosophy, Hebrew University, Israel. Title: “Space-State Semantics”. Supervised by Prof. O. Shagrir. Best Thesis Award.</li>
-                <li><strong>2002-2004:</strong> Bachelor of Mathematics, University of Haifa, Israel.</li>
-                <li><strong>1997-2000:</strong> Bachelor of Physics, Technion, Israel.</li>
+                <li>T. Desbordes, Y. Lakretz, V. Chanoine, M. Oquab, J.-M. Badier, A. Trébuchon, R. Carron, C.-G. Bénar, S. Dehaene, and J.-R. King. "Dimensionality and ramping: Signatures of sentence integration in the dynamics of brains and deep language models". In: Journal of Neuroscience 43.29 (2023). IF: 4.4, Q1, pp. 5350-5364. [cite: 43, 44]</li>
+                <li>A. Pasquiou, Y. Lakretz, B. Thirion, and C. Pallier. "Information-restricted neural language models reveal different brain regions' sensitivity to semantics, syntax, and context". In: Neurobiology of Language 4.4 (2023). IF: 3.6, Q1, pp. 611-636. [cite: 45, 46]</li>
+                <li>A. Srivastava, A. Rastogi, A. Rao, A. A. M. Shoeb, A. Abid, A. Fisch, A. R. Brown, A. Santoro, A. Gupta, A. Garriga-Alonso, et al. "Beyond the imitation game: quantifying and extrapolating the capabilities of language models". In: Transactions on Machine Learning Research 2023.5 (2023). IF: 6.0, Q1, pp. 1-95. [cite: 47, 48]</li>
+                <li>S. Dehaene, F. Al Roumi, Y. Lakretz, S. Planton, and M. Sablé-Meyer. "Symbols and mental programs: a hypothesis about human singularity". In: Trends in Cognitive Sciences 26.9 (2022). IF: 19.9, Q1, pp. 751-766. [cite: 49]</li>
+                <li>Y. Lakretz, D. Hupkes, A. Vergallito, M. Marelli, M. Baroni, and S. Dehaene. "Mechanisms for Handling Nested Dependencies in Neural-Network Language Models and Humans". In: Cognition 213 (2021). IF: 4.0, Q1, p. 104699. [cite: 50, 51, 52]</li>
+                <li>Y. Lakretz*, O. Ossmy*, N. Friedmann, R. Mukamel, and I. Fried. "Single-cell activity in human STG during perception of phonemes is organized according to manner of articulation". In: NeuroImage 226 (2021). IF: 4.9, Q1, p. 117499. [cite: 53, 54]</li>
+                <li>O. Woolnough, C. Donos, P. S. Rollo, K. J. Forseth, Y. Lakretz, N. E. Crone, S. Fischer-Baum, S. Dehaene, and N. Tandon. "Spatiotemporal dynamics of orthographic and lexical processing in the ventral visual pathway". In: Nature human behaviour 5.3 (2021). IF: 20.8, Q1, pp. 389-398. [cite: 55, 56]</li>
+                <li>Y. Lakretz, S. Dehaene, and J.-R. King. "What Limits our Capacity to Process Nested Long-Range Dependencies in Sentence Comprehension?" In: Entropy 22.4 (2020). IF: 2.2, Q2, p. 446. [cite: 57, 58]</li>
             </ul>
-        </section>
-
-	<br>
-        <section class="teaching">
-            <h3>TEACHING</h3>
-            <h4>Lecturer</h4>
+        </div>
+        <div class="sub-section">
+            <h3>Preprints and under Review</h3>
             <ul>
-                <li><strong>2023-2024:</strong> Ecole Normale Supérieure, Paris, Lecturer; Advanced Data Analysis with Artificial Neural Networks (Graduate course; M2)</li>
-                <li><strong>2023-2024:</strong> Dauphine University, Paris, Lecturer; Natural Language Processing and Artificial Intelligence (Graduate course; M2)</li>
-                <li><strong>2014-2017:</strong> Tel-Aviv University, The Sagol school of Neuroscience, Lecturer; Introduction to Computational Neuroscience (Undergraduate Course)</li>
-                <li><strong>2016:</strong> Bar-Ilan University, The Gonda Multidisciplinary Brain Research Center, Lecturer; Computational Methods to Neuroscience (Undergraduate Course)</li>
-                <li><strong>2013-2014:</strong> Tel-Aviv University, The Sagol school of Neuroscience, Lecturer (together with Prof. Ben-Jacob E.); Network Theory and its Applications to Neuroscience (Undergraduate Course)</li>
+                <li>P. Diego-Simón, E. Chemla, J.-R. King, and Y. Lakretz. "Probing Syntax in Large Language Models: Successes and Remaining Challenges". In: Submitted to COLM. 2025. [cite: 59, 60]</li>
+                <li>M. Goodale, S. Mascarenhas, and Y. Lakretz. "Meta-Learning Neural Mechanisms rather than Bayesian Priors". In: arXiv preprint arXiv:2503.16048 (2025). Submitted to ACL 2025. [cite: 61]</li>
+                <li>B. Bianchi, A. Agrawal, S. Dehaene, E. Chemla, and Y. Lakretz. "Disentanglement and Compositionality of Letter Identity and Letter Position in Variational Auto-Encoder Vision Models". In: arXiv preprint arXiv:2412.10446 (2024). Submitted to CCN 2025. [cite: 62, 63, 64]</li>
+                <li>L. Jalouzot, R. Sobczyk, B. Lhopitallier, J. Salle, N. Lan, E. Chemla, and Y. Lakretz. "Metric-Learning Encoding Models Identify Processing Profiles of Linguistic Features in BERT's Representations". In: arXiv preprint arXiv:2402.11608 (2024). Submitted to CCN 2025. [cite: 65, 66]</li>
+                <li>Y. Lakretz, N. Friedmann, J.-R. King, E. Mankin, A. Rangel, A. Tankus, S. Dehaene, and I. Fried. "Modality-Specific and Amodal Language Processing by Single Neurons". In: bioRxiv (2024). Submitted to Cell. [cite: 67]</li>
+                <li>J. Salle, L. Jalouzot, N. Lan, E. Chemla, and Y. Lakretz. "What Makes Two Language Models Think Alike?" In: arXiv preprint arXiv:2406.12620 (2024). Submitted to CCN 2025. [cite: 68, 69]</li>
+                <li>C.-N. Zacharopoulos, S. Dehaene, and Y. Lakretz. "Disentangling Hierarchical and Sequential Computations during Sentence Processing". In: bioRxiv (2022). In revision - Cortex, pp. 2022-07. [cite: 70]</li>
+                <li>Y. Lakretz, T. Desbordes, J.-R. King, B. Crabbé, M. Oquab, and S. Dehaene. "Can RNNs Learn Recursive Nested Subject-Verb Agreements?" In: arXiv preprint arXiv:2101.02258 (2021). [cite: 71, 72]</li>
+                <li>Y. Lakretz, G. Chechik, E.-G. Cohen, A. Treves, and N. Friedmann. "Metric Learning for Phoneme Perception". In: arXiv preprint arXiv:1809.07824 (2018). [cite: 73]</li>
             </ul>
-            <h4>Massive Open Online Course (MOOC)</h4>
+        </div>
+         <div class="sub-section">
+            <h3>e-Letters</h3>
             <ul>
-                <li><strong>2024-2025:</strong> Similarities and Differences in Natural Language Processing between Humans and Neural Models; Creation of an online advanced course for graduate students at Paris Sciences & Lettres (PSL University).</li>
+                <li>Y. Lakretz and S. Dehaene. Recursive Processing of Nested Structures in Monkeys? Two alternative accounts. Oct. 2021. DOI: 10.31234/osf.io/k8vws. [cite: 74]</li>
             </ul>
-            <h4>Teaching Assistant</h4>
+        </div>
+    </section>
+
+    <section id="selected-talks">
+        <h2>Selected Talks</h2>
+        <div class="sub-section">
+            <h3>Invited Talks</h3>
             <ul>
-                <li><strong>2013-2016:</strong> Bar-Ilan, The Gonda Multidisciplinary Brain Research Center, Teaching Assistant; Neural Networks (Graduate Course, with Prof. Gal Chechik)</li>
-                <li><strong>2016:</strong> Tel-Aviv University, The Sagol school of Neuroscience, Teaching Assistant; Computational Psychology (Undergraduate Course, with Prof. Shimon Edelman)</li>
-                <li><strong>2012-2014:</strong> Tel-Aviv University, The Sagol school of Neuroscience, Teaching Assistant; Neuroanatomy (Undergraduate Course, with Dr. Asaf Marom)</li>
+                <li>Humans vis-à-vis language models; a behavioral, neural and developmental comparison. Workshop on Modelling in Neurolinguistics. Location: Trondheim, Norway. Year: June 2024. [cite: 75, 76]</li>
+                <li>Linking Linguistic Theory and Brain Dynamics with Deep Neural Models. NEURODEVROB23: Linking Robotics, Development and Neurosciences. Location: Cergy-Pontoise, France. Year: December 2023. [cite: 77]</li>
+                <li>Encoding and Processing of Linguistic Features in Biological and Artificial Neural Networks. SMILES workshop, ICDL 2021. Location: Virtual/Online. Year: August 2021. [cite: 78]</li>
             </ul>
-        </section>
-
-	<br>
-        <section class="supervision">
-            <h3>SUPERVISION</h3>
+        </div>
+        <div class="sub-section">
+            <h3>Departmental Seminars</h3>
             <ul>
-                <li>Robin Sobczyk (PhD, CDSN scholarship, 2024-2027)</li>
-                <li>Louis Jalouzot (PhD, CDSN scholarship, 2024-2027, co-supervision with Christophe Pallier)</li>
-                <li>Maxence Pajot (PhD, 2024-2027, co-supervision with Stanislas Dehaene)</li>
-                <li>Pablo Diego-Simón (PhD, AI4TheSciences scholarship, 2023-2026, with Jean-Rémi King)</li>
-                <li>Michael Goodale (PhD, FIRE scholarship, 2023-2026, with Salvador Mascarenhas)</li>
-                <li>Christos Zacharopoulos (PhD, 2019-2022, with Stanislas Dehaene)</li>
+                <li>Deep Neural Models as a Window into a Neural Theory of Language: Successes and Challenges. Colloquium of the Cukier-Goldstein-Goren Center for Mind, Cognition and Language (MILA Center), Tel-Aviv University. Location: Tel Aviv, Israel. Year: April 2025. [cite: 79, 80]</li>
+                <li>Linking Linguistic Theory and Brain Dynamics with Deep Neural Models. Computer Science Department, University of Bristol. Location: Bristol, UK. Year: April 2024. [cite: 81]</li>
+                <li>Modality-Specific and Amodal Language Processing by Single Neurons. MIT, EvLab. Location: Cambridge, USA. Year: March 2025. [cite: 82]</li>
+                <li>What Limits Our Capacity to Process Nested Hierarchical Structures in Sentence Comprehension? A Neural-Network Based Account. Johns Hopkins University. Location: Baltimore, USA. Year: July 2020. [cite: 83]</li>
+                <li>Is 'she' Jennifer? Co-reference in concept cells in the Medial Temporal Lobe. SISSA, Italy. Location: Trieste, Italy. Year: October 2020. [cite: 84]</li>
+                <li>Probabilistic graphical models of dyslexia. Laboratoire Parole et Langage. Location: Aix-en-Provence, France. Year: 2015.</li>
             </ul>
-            <h4>Internships</h4>
+        </div>
+        <div class="sub-section">
+            <h3>Conference Presentations</h3>
             <ul>
-                <li>Jeanne Salle (2023, M2 internship, with Emmanuel Chemla)</li>
-                <li>Robin Sobczyk (2023, M2 internship, with Emmanuel Chemla)</li>
-                <li>Bastien l’Hopitallier (2023, M2 internship, with Emmanuel Chemla)</li>
-                <li>Hagar Salpeter (2022, M2 internship, with Laurent Cohen)</li>
+                <li>Neural Mechanisms Underlying Language Processing in Humans and Artificial Neural Networks. The Assembly and Function of Neuronal Circuits. Poster presentation, Location: Ascona, Switzerland. Year: September 2023. [cite: 85, 86]</li>
+                <li>The emergence of number and syntax units in LSTM language models. NAACL. Oral Presentation, Location: Minneapolis, USA. Year: 2019. [cite: 87]</li>
+                <li>The perceptual structure of the phoneme manifold. Trieste Encounters on Cognitive Science, TEX2016. Oral Presentation, Location: Trieste, Italy. Year: 2016. [cite: 88]</li>
+                <li>A biologically-inspired model of visual word recognition. Belgrade BioInformatics Conference, BelBI2016. Oral Presentation, Location: Belgrade, Serbia. Year: June 2016. [cite: 89]</li>
+                <li>Metric learning for phoneme perception. 3rd Conference on Cognition Research of the Israeli Society for Cognitive Psychology. Oral Presentation, Location: Acre, Israel. Year: February 2016. [cite: 90, 91]</li>
+                <li>Probabilistic graphical models of dyslexia. KDD2015. Oral Presentation, Location: Sydney, Australia. Year: August 2015. [cite: 92]</li>
+                <li>A neuronal-based model for the process of reading. ENCODS2013. Oral Presentation, Location: Bordeaux, France. Year: July 2013. [cite: 93]</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-	<br>
-        <section class="talks">
-            <h3>SELECTED TALKS AND PRESENTATIONS</h3>
-            <ul>
-            		<br>
-                    <p>Humans vis-à-vis language models; a behavioral, neural and developmental comparison. Workshop on Modelling in Neurolinguistics, Trondheim, June 2024 (Invited talk)</p><br>
+    <section id="methodologies">
+        <h2>Methodologies</h2>
+        <ul>
+            <li>Intracranial electrophysiology - ECOG, SEEG and single-unit.</li>
+            <li>Neuroimaging - functional MRI, electro- and magneto-encephalography (E/MEG).</li>
+            <li>Computational modeling - Deep Learning, Bayesian Models, Dynamical Systems. [cite: 94]</li>
+        </ul>
+    </section>
 
-		    <p>Linking Linguistic Theory and Brain Dynamics with Deep Neural Models. Computer Science Department, University of Bristol, April 2024 (Invited talk)</p><br>
+    <footer>
+        <p style="text-align:center; font-size:0.8em; color:#777;">
+            HTML structure generated based on PDF content. Further styling and content verification recommended.
+        </p>
+    </footer>
 
-		    <p>Linking Linguistic Theory and Brain Dynamics with Deep Neural Models. NEURODEVROB23: Linking Robotics, Development and Neurosciences. Cergy-Pontoise, France. December 2023. (Invited talk)</p><br>
-
-		    <p>Neural Mechanisms Underlying Language Processing in Humans and Artificial Neural Networks, The Assembly and Function of Neuronal Circuits, Ascona, Switzerland, September 2022. </p><br>
-
-		    <p>Encoding and Processing of Linguistic Features in Biological and Artificial Neural Networks. SMILES workshop, ICDL 2021. (Invited talk)</p><br>
-
-		    <p>What Limits Our Capacity to Process Nested Hierarchical Structures in Sentence Comprehension? A Neural-Network Based Account. Johns Hopkins University, July 2020, (Invited talk).</p><br>
-
-		    <p>Is ‘she’ Jennifer? Co-reference in concept cells in the Medial Temporal Lobe. SISSA, Italy, October 2020 (Invited talk).</p><br>
-
-		    <p>The emergence of number and syntax units in LSTM language models, NAACL, Minneapolis, USA, 2019.</p><br>
-
-		    <p>The perceptual structure of the phoneme manifold. Trieste Encounters on Cognitive Science, TEX2016, Trieste, Italy.</p><br>
-
-		    <p>A biologically-inspired model of visual word recognition. Presented at the Belgrade BioInformatics Conference, BelBI2016, Belgrade, Serbia, June 2016.</p>
-<br>
-		    <p>Metric learning for phoneme perception. Presented at the 3rd Conference on Cognition Research of the Israeli Society for Cognitive Psychology, Israel, February, 2016.</p><br>
-
-		    <p>Probabilistic graphical models of dyslexia. KDD2015, Sydney, Australia, August, 2015.</p><br>
-
-		    <p>Probabilistic graphical models of dyslexia, Laboratiore Parole et Langage, Aix-en-Provence, 2015 (Invited talk).</p><br>
-
-            </ul>
-        </section>
-
-	<br>
-        <section class="methodologies">
-            <h3>METHODOLOGIES</h3>
-            <ul>
-                <li>Intracranial electrophysiology – ECoG, SEEG and single-unit (MNE-Python, spike-sorting: WaveClus and Combinato)</li>
-                <li>Neuroimaging – functional MRI and electro- and magneto-encephalography (E/MEG)</li>
-                <li>Computational modeling - Bayesian Models, Deep Learning, Dynamical Systems</li>
-            </ul>
-        </section>
-
-	<br>
-        <section class="languages">
-            <h3>LANGUAGES</h3>
-            <ul>
-                <li>Hebrew – Native language</li>
-                <li>English – Full professional proficiency</li>
-                <li>French – Full professional proficiency</li>
-                <li>Italian – Elementary proficiency (B2 level)</li>
-            </ul>
-        </section>
-
-
-        
-        
-        <footer>
-            <p>&copy; 2024 Yair Lakretz | LSCP, Ecole Normale Supérieure, Paris</p>
-        </footer>
-    </div>
 </body>
 </html>
